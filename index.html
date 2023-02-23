@@ -1,176 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>自己紹介ページ</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <link href="css/styles.css" rel="stylesheet" />
-        <!-- Simple line icons-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+<!doctype html>
+<html lang="ja">
 
-    </head>
-    <body id="page-top">
+<head>
+    <meta charset="UTF-8">
+    <title>自己紹介ページ</title>
 
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">Menu</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-            </ul>
-        </nav>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--ファビコン-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+        rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+        rel="stylesheet" type="text/css" />
+</head>
 
-        <header class="masthead d-flex align-items-center">
-            <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1">自己紹介ページ</h1>
-                <h3 class="mb-5"><em>これからここに記述していきます。</em></h3>
-                <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
-            </div>
-        </header>
+<body>
+    <div class="container marketing">
+        <!-- 順番に表示される要素-->
+        <ul class="flex delayScroll">
+            <li class="box">順番に表示</li>
+            <li class="box">順番に表示</li>
+            <li class="box">順番に表示</li>
+        </ul>
 
-        <section class="content-section bg-light" id="about">
-            <div class="container px-4 px-lg-5 text-center">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>なんか書きます</h2>
-                        <p class="lead mb-5">
-                            This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-                            <a href="https://unsplash.com/">Unsplash</a>
-                            !
-                        </p>
-                        <a class="btn btn-dark btn-xl" href="#services">What We Offer!</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section bg-primary text-white text-center" id="services">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading">
-                    <h3 class="text-secondary mb-0">Services</h3>
-                    <h2 class="mb-5">What We Offer</h2>
-                </div>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
-                        <h4><strong>Responsive</strong></h4>
-                        <p class="text-faded mb-0">Looks great on any screen size!</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
-                        <h4><strong>Redesigned</strong></h4>
-                        <p class="text-faded mb-0">Freshly redesigned for Bootstrap 5.</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
-                        <h4><strong>Favorited</strong></h4>
-                        <p class="text-faded mb-0">
-                            Millions of users
-                            <i class="fas fa-heart"></i>
-                            Start Bootstrap!
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
-                        <h4><strong>Question</strong></h4>
-                        <p class="text-faded mb-0">I mustache you a question...</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section" id="portfolio">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Recent Projects</h2>
-                </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Stationary</div>
-                                    <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Ice Cream</div>
-                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Strawberries</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Workspace</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section bg-primary text-white">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
-            </div>
-        </section>
-
-        <footer class="footer text-center">
-            <div class="container px-4 px-lg-5">
-                <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
-                    </li>
-                </ul>
-                <p class="text-muted small mb-0">Copyright &copy; Your Website 2022</p>
-            </div>
-        </footer>
-        <!-- スタートロゴ -->
-        <div class="start">
-            <p><img src="assets/images/logo.jpg" alt=""></p>
-        </div>
+        <!-- 入力風文字-->
+        <h1>This pen is
+            <span class="txt-rotate" data-period="2000"
+                data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]'>
+            </span>
+        </h1>
+        <h2>A single &lt;span&gt; is all you need.</h2>
         
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        
+        <!--後から表示される背景画像-->
+        <div id="target" style="display:none"></div>
+
+        <!-- 動く背景 -->
+        <div id="app">
+        </div>
+
+
+        <div class="row">
+            <h2 class="ttl">工夫</h2>
+            <div class="col-lg-4">
+                <h3 class="ttl">プランニング</h3>
+                <p class="ttl">PLANNING</p>
+                <p class="icon"><img src="assets/images/icon_6.png" alt="direction" class="logo"></p>
+                <p class="text01">何が必要で何が必要でないのかを洗いだし、現状の技術力と照らし合わせ、短い時間で可能な限りクオリティの高いWebサイトを作るためのプランを作成しました。</p>
+            </div>
+            <div class="col-lg-4">
+                <h3 class="ttl">デザイン</h3>
+                <p class="ttl">DESIGN</p>
+                <p class="icon"><img src="assets/images/icon_5.png" alt="direction" class="logo"></p>
+                <p class="text02">事前に立てたプランに沿って、デザインを作成いたしました。人に伝えるということを意識して、分かりやすく、かつ動きのあるデザインを心がけました。</p>
+            </div>
+            <div class="col-lg-4">
+                <h3 class="ttl">コーディング</h3>
+                <p class="ttl">CODING</p>
+                <p class="icon"><img src="assets/images/icon_2.png" alt="direction" class="logo"></p>
+                <p class="text03">デザインを実現し、動きや効果が適切に実現されるようにコーディングを行いました。短期間での開発ではありますがGithubでのバージョン管理を行いました。</p>
+            </div>
+        </div>
+
+
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">タイトル<span class="text-muted">その１</span></h2>
+                <p class="lead"></p>ここになんか書きます。内容はまだまったく考えていないので今はこうして適当な文章で埋めています。</p>
+            </div>
+            <div class="col-md-5">
+                <img src="assets/images/img1.png">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">タイトル<span class="text-muted">その２</span></h2>
+                <p class="lead"></p>ここになんか書きます。内容はまだまったく考えていないので今はこうして適当な文章で埋めています。</p>
+            </div>
+            <div class="col-md-5">
+                <img src="assets/images/img2.png">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">タイトル<span class="text-muted">その３</span></h2>
+                <p class="lead"></p>ここになんか書きます。内容はまだまったく考えていないので今はこうして適当な文章で埋めています。</p>
+            </div>
+            <div class="col-md-5">
+                <img src="assets/images/img3.png">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+    </div>
+
+
+    <!-- フッター -->
+    <footer class="container">
+
+        <div class="container px-4 px-lg-5">
+            <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="#!"><i
+                            class="icon-social-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="#!"><i
+                            class="icon-social-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <p class="float-right"><a href="#">Back to top</a></p>
+    </footer>
+    </div>
+    <!-- スタートロゴ -->
+    <div class="start">
+        <p><img src="assets/images/logo.png" alt=""></p>
+    </div>
+
+    <!-- core JS-->
+    <script src="assets/scripts/jquery-3.4.1.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>

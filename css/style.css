@@ -1,0 +1,120 @@
+
+@charset "utf-8";
+
+/* スタートロゴ */
+.start {
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+.start p {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 9999;
+    width: 280px;
+    }
+
+.ttl {
+    text-align: center
+}
+
+img.logo  {
+    margin-left: 40px;
+}
+
+h2.ttl {
+    margin-bottom: 30px;
+}
+
+div.row {
+    margin-top: 30px;
+}
+
+
+.bg_test-text {
+    border:  solid 1px;                             /* 枠線指定 */
+    display:  inline-block;                         /* インラインブロックにする */
+    padding: 10px 20px;                             /* 余白指定 */
+    background-color: rgba(255, 255, 255, 0.7);     /* 背景色指定 */
+}
+.bg_test {
+    text-align:  center;    /* 文字中央寄せ */
+    padding:  150px;        /* 余白指定 */
+    border: solid 2px;      /* 枠線指定 */
+}
+
+/*背景画像をスクロールに合わせて横にスライドさせる*/
+#app {
+    position: relative;
+    width: calc(100% + 300px); /* 子要素を親要素より大きくする */
+    margin: 0 -150px;          /* はみ出した分をmarginから引くことで中央に配置する */
+    height: 100vh;
+    background-image: url(../assets/images/test.png);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center left;
+}
+
+#target {
+    position: relative;
+    width: calc(100% + 300px); /* 子要素を親要素より大きくする */
+    margin: 0 -150px;          /* はみ出した分をmarginから引くことで中央に配置する */
+    height: 100vh;
+    background-image: url(../assets/images/background1.png);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center left;
+}
+
+/*アニメーション*/
+/*スタート時は要素自体を透過0にするためのopacity:0;を指定する*/
+
+.box{
+    opacity: 0;
+}
+
+/*動かしたい動き*/
+
+.fadeUp {
+animation-name:fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html,body {
+  font-family: 'Raleway', sans-serif;
+  padding: 1em 2em;
+  font-size: 18px;
+  background: lightyellow;
+  color: #aaa
+}
+
+h1,h2 {
+  font-weight: 200;
+  margin: 0.4em 0;
+}
+h1 { font-size: 3.5em; }
+h2 {
+  color: #888;
+  font-size: 2em;
+}
