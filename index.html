@@ -11,7 +11,7 @@
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!--ファビコン-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!-- Font Awesome icons -->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Simple line icons-->
@@ -23,117 +23,142 @@
 </head>
 
 <body>
-    <div class="container marketing">
-        <!-- 順番に表示される要素-->
-        <ul class="flex delayScroll">
-            <li class="box">順番に表示</li>
-            <li class="box">順番に表示</li>
-            <li class="box">順番に表示</li>
-        </ul>
+    <header style="display:none">
+        <nav class="pc-navl">
 
-        <!-- 入力風文字-->
-        <h1>This pen is
+            <!-- 順番に表示される要素-->
+            <ul class="flex delayScroll" id="menu">
+                <li><a href="#">
+                        <h1>Portfolio</h1>
+                    </a></li>
+                <li><a href="#profile">PROFILE</a></li>
+                <li><a href="#about">ABOUNT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 入力風文字-->
+    
+
+    <div id="man">
+        <h1 id="anime">
             <span class="txt-rotate" data-period="2000"
-                data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]'>
+                data-rotate='["私の名前はエグチ コウシです。", "1994年6月3日生まれの28歳です。"]'>
             </span>
         </h1>
-        <h2>A single &lt;span&gt; is all you need.</h2>
-        
-        
-        <!--後から表示される背景画像-->
-        <div id="target" style="display:none"></div>
-
-        <!-- 動く背景 -->
-        <div id="app">
+        <div id="btn_p" class="text-center">
+            <button type="button" id="start_btn">始める</button>
+            <button type="button" id="second_btn" class="none">次へ</button>
         </div>
-
-
-        <div class="row">
-            <h2 class="ttl">工夫</h2>
-            <div class="col-lg-4">
-                <h3 class="ttl">プランニング</h3>
-                <p class="ttl">PLANNING</p>
-                <p class="icon"><img src="assets/images/icon_6.png" alt="direction" class="logo"></p>
-                <p class="text01">何が必要で何が必要でないのかを洗いだし、現状の技術力と照らし合わせ、短い時間で可能な限りクオリティの高いWebサイトを作るためのプランを作成しました。</p>
-            </div>
-            <div class="col-lg-4">
-                <h3 class="ttl">デザイン</h3>
-                <p class="ttl">DESIGN</p>
-                <p class="icon"><img src="assets/images/icon_5.png" alt="direction" class="logo"></p>
-                <p class="text02">事前に立てたプランに沿って、デザインを作成いたしました。人に伝えるということを意識して、分かりやすく、かつ動きのあるデザインを心がけました。</p>
-            </div>
-            <div class="col-lg-4">
-                <h3 class="ttl">コーディング</h3>
-                <p class="ttl">CODING</p>
-                <p class="icon"><img src="assets/images/icon_2.png" alt="direction" class="logo"></p>
-                <p class="text03">デザインを実現し、動きや効果が適切に実現されるようにコーディングを行いました。短期間での開発ではありますがGithubでのバージョン管理を行いました。</p>
-            </div>
-        </div>
-
-
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">タイトル<span class="text-muted">その１</span></h2>
-                <p class="lead"></p>ここになんか書きます。内容はまだまったく考えていないので今はこうして適当な文章で埋めています。</p>
-            </div>
-            <div class="col-md-5">
-                <img src="assets/images/img1.png">
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">タイトル<span class="text-muted">その２</span></h2>
-                <p class="lead"></p>ここになんか書きます。内容はまだまったく考えていないので今はこうして適当な文章で埋めています。</p>
-            </div>
-            <div class="col-md-5">
-                <img src="assets/images/img2.png">
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">タイトル<span class="text-muted">その３</span></h2>
-                <p class="lead"></p>ここになんか書きます。内容はまだまったく考えていないので今はこうして適当な文章で埋めています。</p>
-            </div>
-            <div class="col-md-5">
-                <img src="assets/images/img3.png">
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
     </div>
+    
+    <!-- 後から表示される背景画像 -->
+    <!-- <div id="target" style="display:none"> -->
+    <!-- <div id="target2" style="display:none"></div> -->
+    <!-- </div> -->
 
+    <!-- 動く背景 -->
+    <div id="app">
+        <!-- プロフィール -->
+        <section id="profile_blank">
+            <div class="container marketing" id="profile">
+                <hr class="featurette-divider1">
+                <!-- 出身 -->
+                <div class="row featurette">
+                    <div class="col-md-5">
+                        <h2 class="featurette-heading">出身</h2>
+                        <p class="lead"></p>出身は福島県いわき市です。</p>
+                    </div>
+                    <div class="col-md-7">
+                        <!--======= 表示させたいものをここに記載 =======-->
+                        <div class="scroll_up">
+                            <img src="assets/images/iwaki.png" class="image">
+                        </div>
+                    </div>
+                </div>
+                <!-- 趣味 -->
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-5 order-md-2">
+                        <h2 class="featurette-heading">趣味</h2>
+                        <p class="lead"></p>趣味はゲームとボクシング観戦です。特にスプラトゥーンは千時間単位でやり込んでいます。</p>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="scroll_left">
+                            <img src="assets/images/iwaki.png" class="image">
+                        </div>
+                    </div>
+                </div>
+                <!-- 座右の銘 -->
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-5">
+                        <h2 class="featurette-heading">座右の銘</h2>
+                        <p class="lead"></p>座右の銘は</p>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="scroll_right">
+                            <img src="assets/images/iwaki.png" class="image">
+                        </div>
+                    </div>
+                </div>
+                                <hr class="featurette-divider">
+            </div>
+        </section>
+        <section id="about_blank">
+            <!-- アバウト -->
+            <div class="container marketing" id="about">
+
+
+                <div class="row" id="about">
+                    <h2 class="ttl">工夫</h2>
+                    <div class="col-lg-4">
+                        <h3 class="ttl">プランニング</h3>
+                        <p class="ttl">PLANNING</p>
+                        <p class="icon"><img src="assets/images/icon_6.png" alt="direction" class="logo"></p>
+                        <p class="text01">何が必要で何が必要でないのかを洗いだし、現状の技術力と照らし合わせ、短い時間で可能な限りクオリティの高いWebサイトを作るためのプランを作成しました。
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="ttl">デザイン</h3>
+                        <p class="ttl">DESIGN</p>
+                        <p class="icon"><img src="assets/images/icon_5.png" alt="direction" class="logo"></p>
+                        <p class="text02">事前に立てたプランに沿って、デザインを作成いたしました。人に伝えるということを意識して、分かりやすく、かつ動きのあるデザインを心がけました。</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="ttl">コーディング</h3>
+                        <p class="ttl">CODING</p>
+                        <p class="icon"><img src="assets/images/icon_2.png" alt="direction" class="logo"></p>
+                        <p class="text03">デザインを実現し、動きや効果が適切に実現されるようにコーディングを行いました。短期間での開発ではありますがGithubでのバージョン管理を行いました。
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    
+        
+<div id="roop"></div>
 
     <!-- フッター -->
-    <footer class="container">
-
-        <div class="container px-4 px-lg-5">
-            <ul class="list-inline mb-5">
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="#!"><i
-                            class="icon-social-facebook"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="#!"><i
-                            class="icon-social-twitter"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
-                </li>
-            </ul>
-        </div>
-
-        <p class="float-right"><a href="#">Back to top</a></p>
-    </footer>
+    <div class="col-md-6 offset-md-5" id="contact">
+        <footer class="footer text-center">
+            <div class="container">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i
+                                class="icon-social-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="#!"><i
+                                class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
     <!-- スタートロゴ -->
     <div class="start">
@@ -144,6 +169,7 @@
     <script src="assets/scripts/jquery-3.4.1.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+   
 </body>
 
 </html>

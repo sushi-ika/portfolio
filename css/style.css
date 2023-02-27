@@ -1,6 +1,16 @@
 
 @charset "utf-8";
 
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "メイリオ" ;
+  font-weight: bold;
+  font-size: 18px;
+  background: #FAF0E6;
+  color: #aaa
+}
 /* スタートロゴ */
 .start {
     background-color: #FFF;
@@ -21,74 +31,66 @@
     width: 280px;
     }
 
+/*アイコン並べ*/
 .ttl {
     text-align: center
 }
-
 img.logo  {
     margin-left: 40px;
 }
-
 h2.ttl {
     margin-bottom: 30px;
 }
-
 div.row {
     margin-top: 30px;
 }
 
-
-.bg_test-text {
-    border:  solid 1px;                             /* 枠線指定 */
-    display:  inline-block;                         /* インラインブロックにする */
-    padding: 10px 20px;                             /* 余白指定 */
-    background-color: rgba(255, 255, 255, 0.7);     /* 背景色指定 */
-}
-.bg_test {
-    text-align:  center;    /* 文字中央寄せ */
-    padding:  150px;        /* 余白指定 */
-    border: solid 2px;      /* 枠線指定 */
-}
-
 /*背景画像をスクロールに合わせて横にスライドさせる*/
 #app {
-    position: relative;
-    width: calc(100% + 300px); /* 子要素を親要素より大きくする */
-    margin: 0 -150px;          /* はみ出した分をmarginから引くことで中央に配置する */
-    height: 100vh;
     background-image: url(../assets/images/test.png);
     background-repeat: no-repeat;
     background-size: 150%;
-    background-position: center left;
+    background-position: top;
 }
 
-#target {
+#back_outline {
     position: relative;
-    width: calc(100% + 300px); /* 子要素を親要素より大きくする */
-    margin: 0 -150px;          /* はみ出した分をmarginから引くことで中央に配置する */
+    width: 100%;
     height: 100vh;
-    background-image: url(../assets/images/background1.png);
+    background-image:url(../assets/images/background1.png);
     background-repeat: no-repeat;
     background-size: 150%;
     background-position: center left;
 }
+#man {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image:url(../assets/images/man.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position:90%;
+}
+
+#anime {
+   height:200px;
+   line-height:200px;
+   padding-left:10%;
+   padding-top: 22%;
+}
+
 
 /*アニメーション*/
 /*スタート時は要素自体を透過0にするためのopacity:0;を指定する*/
-
 .box{
     opacity: 0;
 }
-
-/*動かしたい動き*/
-
 .fadeUp {
 animation-name:fadeUpAnime;
 animation-duration:0.5s;
 animation-fill-mode:forwards;
 opacity: 0;
 }
-
 @keyframes fadeUpAnime{
   from {
     opacity: 0;
@@ -101,20 +103,184 @@ opacity: 0;
   }
 }
 
-html,body {
-  font-family: 'Raleway', sans-serif;
-  padding: 1em 2em;
-  font-size: 18px;
-  background: lightyellow;
-  color: #aaa
-}
-
 h1,h2 {
   font-weight: 200;
   margin: 0.4em 0;
 }
-h1 { font-size: 3.5em; }
+h1 { font-size: 3.0em; }
 h2 {
   color: #888;
   font-size: 2em;
+}
+
+/*ヘッダー*/
+header {
+   width: 100%;
+   position: fixed;
+   z-index: 1;
+   background-color: transparent;
+   display: flex;
+   align-items: center;
+   text-align: left;
+}
+
+nav.pc-navl{
+    margin-left:5%;
+}
+
+a { 
+   text-decoration: none;
+   color: #777777;
+   font-size: 1.5em;
+}
+
+a:hover {
+    color:#C0C0C0;
+}
+nav {
+   margin: 0 0 0 auto;
+}
+ul {
+   list-style: none;
+   margin: 0;
+   display: flex;
+}
+li {
+   margin: 0 0 0 15px;
+   font-size: 14px;
+}
+
+li h1 {
+    margin-top: 0;
+}
+
+
+/*フッター*/
+footer.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+footer.footer .social-link {
+  display: block;
+  text-decoration: none;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #1D809F;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+footer.footer .social-link:hover {
+  background-color: #155d74;
+  text-decoration: none;
+}
+
+#profile_blank {
+    margin-top: 200px;
+}
+#about_blank {
+    margin-top: 200px;
+}
+
+#profile{
+    display: block;
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+#about{
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+.image {
+width: 600px;
+height: 450px;
+}
+
+/*----------------------------
+scroll_up ｜下から上へ出現
+----------------------------*/
+.scroll_up {
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.scroll_up.on {
+  transform: translateY(0);
+  opacity: 1.0;
+}
+
+/*----------------------------
+scroll_left ｜左から出現
+----------------------------*/
+.scroll_left {
+    -webkit-transition: 0.8s ease-in-out;
+    -moz-transition: 0.8s ease-in-out;
+    -o-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
+    transform: translateX(-30px);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+}
+.scroll_left.on {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1.0;
+    transform: translateX(0);
+}
+
+/*----------------------------
+scroll_right ｜右から出現
+----------------------------*/
+.scroll_right {
+    -webkit-transition: 0.8s ease-in-out;
+    -moz-transition: 0.8s ease-in-out;
+    -o-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
+    transform: translateX(30px);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+}
+.scroll_right.on {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1.0;
+    transform: translateX(0);
+}
+
+/*ボタン設定 */
+.btn_p {
+    
+}
+.none{
+    display: none;
+}
+
+#roop {
+    width: 100%;
+    height: 1000px;
+    background: url(../assets/images/roop.png) repeat-x;
+    background-position: 0 0;
+    -webkit-animation: bgroop 20s linear infinite;
+    animation: bgroop 20s linear infinite;
+}
+@-webkit-keyframes bgroop {
+    from {
+        background-position: 0  0;
+    }
+    to {
+        background-position: -1956px 0;
+    }
+}
+@keyframes bgroop {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1956px 0;
+    }
 }
