@@ -1,14 +1,14 @@
 
 @charset "utf-8";
 
-
+/*共通設定*/
 body {
   margin: 0;
   padding: 0;
   font-family: "メイリオ" ;
   font-weight: bold;
   font-size: 18px;
-  background: #FAF0E6;
+  background:   #FFFFF0;
   color: #aaa
 }
 /* スタートロゴ */
@@ -80,7 +80,7 @@ div.row {
 }
 
 
-/*アニメーション*/
+/*テキストアニメーション*/
 /*スタート時は要素自体を透過0にするためのopacity:0;を指定する*/
 .box{
     opacity: 0;
@@ -155,6 +155,9 @@ li h1 {
 }
 
 
+h1#contact{
+    margin-left:10%;
+}
 /*フッター*/
 footer.footer {
   padding-top: 5rem;
@@ -176,13 +179,21 @@ footer.footer .social-link:hover {
   text-decoration: none;
 }
 
+/*要素間の間隔設定*/
 #profile_blank {
     margin-top: 200px;
 }
 #about_blank {
     margin-top: 200px;
 }
+#hoby_blank {
+    margin-top:200px;
+}
+#motto_blank{
+    margin-top:200px;
+}
 
+/*ページ内リンクの位置調整*/
 #profile{
     display: block;
     padding-top: 70px;
@@ -194,11 +205,13 @@ footer.footer .social-link:hover {
     margin-top: -70px;
 }
 
+/*画像サイズ設定*/
 .image {
 width: 600px;
 height: 450px;
 }
 
+/*画像の出現アニメーション*/
 /*----------------------------
 scroll_up ｜下から上へ出現
 ----------------------------*/
@@ -253,13 +266,11 @@ scroll_right ｜右から出現
 }
 
 /*ボタン設定 */
-.btn_p {
-    
-}
 .none{
     display: none;
 }
 
+/*ループする背景*/
 #roop {
     width: 100%;
     height: 1000px;

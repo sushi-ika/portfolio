@@ -1,4 +1,4 @@
-//ロゴを表示
+//遅延設定
 $(function() {
     setTimeout(function() {
         $('.start p').fadeIn(1600);
@@ -12,27 +12,28 @@ $(function() {
     setTimeout(function() {
         delayScrollAnime(); //3.0秒後にスクロールさせる動かす
     }, 3000)
-    //    setTimeout(function(){
-    //        writeText(); //5.0秒後に文字入力アニメーションを動かす
-    //    },6500)
+//  //    setTimeout(function(){
+//  //        writeText(); //5.0秒後に文字入力アニメーションを動かす
+//        },6500)
     //    setTimeout(function(){
     //        $('#target2').css('background-image', 'url(../assets/images/background1.png)')
     //    },4500)       
 });
 
-
+//スタートボタンの設定
 $(function() {
     $("#start_btn").click(function() {
         writeText();
         $("#start_btn").toggleClass("none");
-        $("#second_btn").removeClass("none")
+//        $("#second_btn").removeClass("none")
     })
 });
-$(function() {
-    $("#second_btn").click(function() {
-        window.alert('test');
-    })
-});
+//セカンドボタンの設定
+//$(function() {
+//    $("#second_btn").click(function() {
+//        window.alert('test');
+//    })
+//});
 
 //スクロールに合わせて背景を動かす
 $(window).on('scroll', function() {
